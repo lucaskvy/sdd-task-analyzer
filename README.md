@@ -59,4 +59,8 @@ A [especificação](specs/task_analyzer_spec.md) e as [regras de contexto](CONTE
 
 ## Status do build
 
-Em validação na branch de implementação. Execute `.venv/bin/python -m pytest -q` para obter o estado atual dos testes. A fase 2 também exige repositório público, pelo menos um Pull Request documentado, vídeo de apresentação e PDF de submissão; esses itens dependem de publicação e gravação pelo estudante.
+Validação local em Python 3.12.3: `8 passed` com `.venv/bin/python -m pytest -q` em 17/10/2026. A fase 2 também exige repositório público, pelo menos um Pull Request documentado, vídeo de apresentação e PDF de submissão; esses itens dependem de publicação e gravação pelo estudante.
+
+## Registro de uso da IA
+
+O pedido à IA foi implementar `analyze_tasks` e `TaskValidationError` a partir de `CONTEXT_RULES.md` e `specs/task_analyzer_spec.md`, depois transformar os cenários de aceite em `tests/test_harness.py`. As regras limitaram a solução a Python 3.11+, biblioteca padrão para o módulo, funções tipadas, erros específicos e nenhuma persistência. A divergência entre as fases sobre unidades e ausência de tarefas válidas foi registrada na especificação antes da homologação pelos testes.
